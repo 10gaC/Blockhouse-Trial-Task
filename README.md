@@ -40,7 +40,7 @@ The question that arises is: how does our model perform compared to classic allo
 * *compare_to_baselines()* yields the upside of using the SOR, rather than the three previous strategies.
 * Finally, *plot_cumulative_cost()* plots the cost of trading using SOR with respect to our order status (how far we are)
 
-## Parameter space
+## Parameters space
 
   Since we want our code to run relatively fast (maximum of 2 minutes), our parameter space cannot be too large. For this reason, we run a grid search over a 3^3 = 27 triplets to limit computational time and cost. We picked:
 `lambda_over ∈ [0.01, 0.05, 0.1]`
