@@ -54,7 +54,11 @@ Unfortunately, the provided dataset did not allow us to properly assess the mode
 
 * Partial queue fills - if one is at the back of the queue at a given venue, often they will not see the full available volume, but only a fraction of the total liquidity. We could easily model this by shrinking the volume at each venue given our position in the queue. 
 * Market latency - some venues may respond slower than others. Assigning each venue a probability based on relative latency would allow the allocator to favor faster venues. We could for example compute this probability based on past data.
-* Market impact - on assets that are relatively not liquid, market makers and traders can sometimes cause the price if they place a large order. We could think about adding a penalty to account for this effect and encourage the ROS to spread the volume over time. 
+* Market impact - on assets that are relatively not liquid, market makers and traders can sometimes cause the price if they place a large order. We could think about adding a penalty to account for this effect and encourage the ROS to spread the volume over time.
+
+## Using this project 
+
+The full code is contained in the backtest.py file, which works standalone and only uses basic Python libraries. The only requirement is to put the dataset in the current working directory and it is good to go. It was coded in Python 3.8, but also works with later versions.
 
 
 
